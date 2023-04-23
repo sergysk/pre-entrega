@@ -1,0 +1,248 @@
+
+*{
+ margin: 0%;   
+ padding: 0%;
+ box-sizing: border-box;
+}
+header{
+
+    height: 80px;
+    width: 100%;
+    background-color: rgb(106, 32, 88);
+    font-size: 20px;
+    padding: 20px;
+    text-shadow: 0 0 5px rgb(223, 104, 182);
+}
+
+body{
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+
+}
+.logo {
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: beige;
+    text-shadow: 0 0 10px rgb(179, 78, 188);
+
+}
+
+.barra {
+    float: right;
+    padding-top: 19px;
+}
+
+ul{
+    list-style: none;
+    margin-left: 10px;
+
+}
+ul li{
+display: inline-block;
+
+}
+
+ul a{
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: large;
+    color: bisque;
+    text-decoration: none;
+    text-shadow: 0 0 10px black;
+    margin-inline: 5px;
+    overflow: hidden;
+   
+    
+}
+
+ul a:hover
+{
+    /*background: #a945c7;*/
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition: 0.3s;
+    transform: scale(0,9s);
+    
+}
+
+ul li a:hover{
+    transition: 0.3s;
+    text-transform: scale(0,9s);
+}
+
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    /*background-color: white;*/
+    background: linear-gradient(rgba(8, 7, 8, 0.56), rgba(62, 20, 51, 0.52)), url(./fondo/background-618226.png);
+    background-size: cover;
+    color: antiquewhite;
+    
+    
+
+
+}
+h2{
+    
+    display: inline-block;
+    width: 50%;
+    height: 20%;
+    padding: 50px;
+    margin-left: 5%;
+    color: rgb(245, 232, 232);
+    text-shadow: 0 0 5px rgb(223, 104, 182);
+    font-weight: lighter;
+
+}
+p{
+    border-color: rgb(192, 56, 142);
+    margin: 30px;
+    text-shadow: 0 0 5px rgb(223, 104, 182);
+    color: rgb(226, 213, 220);
+    font-size: larger;
+
+}
+img{
+    height: 60%;
+    width: auto;
+    position: absolute;
+    top: 120px; 
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(56, 55, 55);
+    
+}
+
+  footer{
+    background-color: black;
+    color: aliceblue;
+    align-self: flex-end;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: small;
+    padding: 30px;
+}
+
+  /*nosotros*/
+
+  .nosotros{
+    
+    
+    width: 50%;
+    height:auto;
+    padding: 40px;
+    text-align: justify;
+    margin-top: 60px;
+    display: flex;
+    border: 4px solid #a945c7;
+
+    background-color: rgba(0, 0, 0, 0.243);
+    border-radius: 40px;
+    color: rgb(243, 236, 236);
+    text-shadow: 0 0 5px rgb(223, 104, 182);
+    font-weight: lighter;
+    font-size: x-large;
+     
+  
+  }
+ 
+  .sticker {
+    margin-left: 0px;
+    height: 80%;
+    width: auto;
+
+   
+    top: 120px; 
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: none;
+    padding:70px;
+  }
+
+
+  img .envianos{
+
+    height: 10px;
+    width: 10px;
+  }
+
+
+/*servicios*/
+
+.servicios{
+    display: inline-block;
+    width: 50%;
+    height: 20%;
+    padding: 50px;
+    margin-left: 5%;
+    color: rgb(236, 230, 230);
+    text-shadow: 0 0 5px rgb(223, 104, 182);
+    font-weight:200;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.contacto{
+    display: flex;
+   justify-content: space-around;
+   text-align: start;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin-left: 2%;
+    margin-top: 40px;
+    color: black;
+    font-weight: lighter;
+    font-size: medium;
+    border: 4px solid rgb(179, 78, 188);
+    border-radius: 40px;
+    text-shadow: 0 0 5px rgb(223, 104, 182);
+
+    background: rgba(134, 35, 101, 0.57);
+
+
+}
+.envianos{
+
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+     width: 80%;
+     height: auto;
+     padding: 20px;
+     margin-left: 2%;
+     margin-top: 40px;
+     color: rgb(105, 250, 177);
+     font-weight: lighter;
+     font-size: medium;
+     border: 4px solid rgb(179, 78, 188);
+     border-radius: 40px;
+     text-shadow: 0 0 5px rgb(223, 104, 182);
+      background:url(https://fontawesome.com/icons/whatsapp?f=brands&s=solid);
+     
+}
+
+.envianos:active{
+    color: black;
+    background-color: rgb(167, 167, 172);
+    transform: scale(1.6s);
+    transition: all (0.9s);
+}
+
+/*.envianos:hover{
+    color: black;
+    background-color: rgb(167, 167, 172);
+    transition: all 0.6s;
+    transform: scale(1.1);
+}*/
+
+
+
+
